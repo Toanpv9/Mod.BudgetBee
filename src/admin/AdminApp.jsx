@@ -19,7 +19,7 @@ function Gate() {
       <div className="bg-white rounded-3xl p-8 max-w-md w-full text-center shadow-sm border border-slate-200 flex flex-col items-center gap-3">
         <img src="logo-mark.png" alt="" className="w-16 h-16" />
         <h1 className="text-xl font-bold text-slate-900">Admins only</h1>
-        <p className="text-sm text-slate-600">Sign in with the demo admin profile (admin@budgetbee.demo) to open the dashboard.</p>
+        <p className="text-sm text-slate-600">Sign in with the admin profile (admin@budgetbee.com) to open the dashboard.</p>
         <a href="#/account" className="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-full bg-emerald-700 text-white font-semibold text-sm"><Icon name="LogIn" size={18} /> Go to sign in</a>
         <a href="#/home" className="text-sm text-emerald-700 font-semibold hover:underline">Back to the student site</a>
       </div>
@@ -87,7 +87,7 @@ export default function AdminApp({ section }) {
           <div className="flex items-center gap-2">
             <div className="hidden sm:flex flex-col items-end leading-tight">
               <span className="text-sm font-bold">{me.name}</span>
-              <span className="text-[11px] font-semibold text-amber-700">Super admin (demo)</span>
+              <span className="text-[11px] font-semibold text-amber-700">Super admin </span>
             </div>
             <img src="avatar.jpg" alt="" className="w-9 h-9 rounded-full object-cover" />
             <button type="button" onClick={signOut} aria-label="Sign out" className="p-2 rounded-full hover:bg-slate-100"><Icon name="LogOut" size={18} /></button>
@@ -110,7 +110,7 @@ export default function AdminApp({ section }) {
           </div>
           <AuditTrail data={data} />
           <Settings data={data} />
-          <p className="text-xs text-slate-600 text-center pb-6">Demo admin dashboard for a student project. Data is stored only in this browser; server actions are simulated.</p>
+          <p className="text-xs text-slate-600 text-center pb-6"> admin dashboard for a student project. Data is stored only in this browser; server actions are simulated.</p>
         </main>
       </div>
     </div>
