@@ -50,7 +50,7 @@ export default function AdminApp({ section }) {
         </div>
         <div className="px-6 py-4">
           <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-200 text-xs font-semibold text-slate-600">
-            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> System: normal (simulated)
+            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> System: normal
           </span>
         </div>
         <nav className="flex-1 px-4 flex flex-col gap-1" aria-label="Admin sections">
@@ -110,7 +110,7 @@ export default function AdminApp({ section }) {
           </div>
           <AuditTrail data={data} />
           <Settings data={data} />
-          <p className="text-xs text-slate-600 text-center pb-6"> admin dashboard for a student project. Data is stored only in this browser; server actions are simulated.</p>
+          <p className="text-xs text-slate-600 text-center pb-6"> admin dashboard for a student project.</p>
         </main>
       </div>
     </div>
